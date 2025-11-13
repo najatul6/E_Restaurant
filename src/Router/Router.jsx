@@ -10,9 +10,7 @@ import UserControls from "@/pages/DashboardView/UserControls/UserControls";
 import About from "@/pages/RootView/About/About";
 import Home from "@/pages/RootView/Home/Home";
 import { createBrowserRouter } from "react-router-dom";
-import AdminRoute from "./AdminRoute";
 import UnAuthorization from "@/pages/Common/UnAuthorization/UnAuthorization";
-import PrivateRoute from "./PrivateRoute";
 
 const Router = createBrowserRouter([
   {
@@ -30,16 +28,14 @@ const Router = createBrowserRouter([
       },
       {
         path: "my-profile",
-        element: <PrivateRoute><UserAccount /></PrivateRoute>,
+        element: <UserAccount />,
       },
     ],
   },
   {
     path: "/dashboard",
     element: (
-      <AdminRoute>
         <DashboardLayout />
-      </AdminRoute>
     ),
     children: [
       {
