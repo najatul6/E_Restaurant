@@ -4,7 +4,7 @@ import { Menu, X, ChevronDown, Search, User, ShoppingCart, LogOut, Settings, Bel
 import { motion, AnimatePresence } from 'framer-motion';
 import { NavLink, useLocation } from 'react-router-dom';
 import useAuth from '@/hooks/useAuth';
-import logo from "@/assets/Greene_King-Logo.wine.svg";
+// import logo from "@/assets/Greene_King-Logo.wine.svg";
 import navItems from '@/lib/navItems';
 import { toast } from 'react-toastify';
 
@@ -108,7 +108,7 @@ const Header = () => {
       whileTap={{ scale: 0.95 }}
     >
       <img 
-        src={logo} 
+        src="#" 
         alt="Greene King Logo" 
         className="h-10 w-auto object-contain"
       />
